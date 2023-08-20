@@ -1,5 +1,5 @@
-// id = vinit
-// psaa = 123
+// id = 123
+// psaa = 321
 
 #include <iostream>
 using namespace std;
@@ -37,7 +37,7 @@ int main()
     cout << "Enter Password: ";
     cin >> password;
 
-    if (userId != vinit || password != 123) {
+    if (userId != 123 || password != 321) {
         cout << "Invalid User ID or Password. Exiting...";
         return 0;
     }
