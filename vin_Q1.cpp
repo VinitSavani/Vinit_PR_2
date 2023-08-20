@@ -42,7 +42,7 @@ public:
 
 int main() 
 {
-    int N;
+    int N,i;
     
     cout << endl << "/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/" << endl;
     cout << "Train Record input and serch program " << endl ;
@@ -58,7 +58,7 @@ int main()
 
     Train trains[N];
 
-    for (int i = 0; i < N; ++i) {
+    for (i = 0; i < N; ++i) {
         cout << "Enter details for Train " << i + 1 << ":" << endl;
         trains[i].inputTrainDetails();
     }
@@ -68,17 +68,19 @@ int main()
     cin >> searchNumber;
 
     int foundIndex = -1;
-    for (int i = 0; i < N; ++i) {
+    for (i = 0; i < N; ++i) {
         if (trains[i].searchTrain(searchNumber)) {
             foundIndex = i;
             break;
         }
     }
 
-    if (foundIndex != -1) {
+    if (foundIndex != -1) 
+    {
         cout << "Train details for Train Number " << searchNumber << ":" << endl;
         trains[foundIndex].displayTrainDetails();
-    } else {
+    } else 
+    {
         cout << "Train with Train Number " << searchNumber << " not found." << endl;
     }
 
