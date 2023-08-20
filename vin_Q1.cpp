@@ -53,7 +53,7 @@ int main()
 
     if (N < 3) {
         cout << "Minimum 3 train records are required." << endl;
-        return 1;
+        return 0;
     }
 
     Train trains[N];
