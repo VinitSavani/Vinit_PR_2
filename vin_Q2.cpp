@@ -1,5 +1,5 @@
 // id = 123
-// psaa = 321
+// password = 321
 
 #include <iostream>
 using namespace std;
