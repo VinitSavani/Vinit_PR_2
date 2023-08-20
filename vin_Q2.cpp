@@ -67,7 +67,7 @@ int main()
     }
 
     
-    cout << endl << "Final Bill :-" << endl ;
+    cout << endl << "                           -: Final Bill :-" << endl ;
     cout << "---------------------------------------------------------------------------------------------------------" << endl ;
     cout << "Item No." << "    Item Name" << "        Quantity"
          << "     Price" << "       Discount (%)" << "    Discounted Price" << "    Final Price\n";
